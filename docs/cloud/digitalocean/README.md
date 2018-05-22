@@ -28,7 +28,7 @@ git clone https://github.com/pharmer/pharmer
 cd pharmer
 go install -v
 
-pharmer -h
+pharmer -hz
 ```
 
 ### Pharmer storage
@@ -397,7 +397,7 @@ master     d1        1         2gb
 ```
 You can see the yaml of newly created node group, you need to run
 ```yaml
-$ pharmer get ng 1gb-pool -k stas -o yaml
+$ pharmer get ng 1gb-pool -k d1 -o yaml
 apiVersion: v1alpha1
 kind: NodeGroup
 metadata:
